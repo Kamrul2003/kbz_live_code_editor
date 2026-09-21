@@ -1,0 +1,268 @@
+
+
+ @media only screen and (min-width: 300px) and (max-width: 400px) {
+  *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body{
+      width: 100%;
+      height: 100vh;
+      padding: 15px 0 0 0;
+      background: linear-gradient(135deg,#fff,#667eea,#fff);
+      background-repeat: no-repeat;
+      .application{
+        width: 100%;
+        background: transparent;
+        .textAnim{
+          cursor: pointer;
+          background: linear-gradient(45deg, red, yellow, lime, cyan, blue, magenta, red);
+          background-size: 300%;
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          animation: textAnimate 2s linear infinite;
+        }
+        .header{
+          width: 90%;
+          height: 70px;
+          position: relative;
+          color: #fff;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-family: serif;
+          margin: 0 5% 10px 5%;
+          text-align: center;
+          align-content: center;
+          border-radius: 10px;
+          background-image: url('bg.png');
+          background-size: cover;
+          background-position: top;
+          background-repeat: no-repeat;
+          .iconBox{
+            width: 40px;
+            top: 5px;
+            left: 0;
+            position: absolute;
+            border: 2px #fff solid;
+            outline: none;
+            font-size: 20px;
+            padding: 5px 5px;
+            margin-left: 10px;
+            border-radius: 8px ;
+          }
+          .headerBox{
+            flex-grow: 1;
+            padding: 0 10px;
+            h2{
+                top: 5px;
+                left: 65px;
+                position: absolute;
+            }
+            a{
+                left: 0;
+                width: 100%;
+                bottom: 5px;
+                text-align: center;
+                position: absolute;
+            }
+          }
+        }
+        .frameBox{
+          width: 100%;   /* t-p, bH, CB,  OB*/
+          height: 625px; /* 5*2, 30, 250, 410*/
+          padding: 5px;
+          background: transparent;
+          .boxHeader{
+            width: 100%;
+            height: 35px;
+            margin-bottom: 5px;
+            display: flex;
+            background: transparent;
+            justify-content: space-between;
+            .fileGroup{
+              width: 60%;
+              padding: 0 0 0 10px;
+              gap: 5px;
+              display: flex;
+              justify-content: space-between;
+              .tab{
+                padding: 5px 0;
+                width: 33%;
+                font-size: 20px;
+                border: none;
+                border-radius: 10px;
+                user-select: none;
+                background-image: url('light blure.png');
+                background-size: cover;
+                background-position: top;
+                background-repeat: no-repeat;
+                border-bottom: 2px blue solid;
+                .tabDot{
+                  display: inline-block;
+                  width: 5px;
+                  height: 5px;
+                  margin-right: 3px;
+                  border-radius: 50%;
+                  box-shadow: 0 0 6px 4px white;
+                }
+                .tabH{ background: #ff5329; } .tabC{ background: #2a55ff; } .tabJ{ background: #ffe62c; }
+                .links{
+                  text-decoration: none;
+                  color: #fff;
+                  font-size: 15px;
+                  font-weight: 1000;
+                }
+              }
+            }
+            .commGroup{
+              width: 30%;
+              padding: 0 10px 0 0;
+              gap: 5px;
+              user-select: none;
+              display: flex;
+              justify-content: space-between;
+              .commnd{
+                padding: 5px 0;
+                width: 50%;
+                font-size: 20px;
+                border: none;
+                border-radius: 10px;
+                border-bottom: 2px blue solid;
+                background-image: url('light blure.png');
+                background-size: cover;
+                background-position: top;
+                background-repeat: no-repeat;
+                i{
+                  text-decoration: none;
+                  font-size: 15px;
+                  color: #fff;
+                  font-weight: 1000;
+                }
+                &:hover{
+                  background-image: url('bg.png');
+                  background-size: cover;
+                  background-position: top;
+                  background-repeat: no-repeat;
+                  i{
+                    cursor: pointer;
+                    background: linear-gradient(45deg, red, yellow, lime, cyan, blue, magenta, red);
+                    background-size: 300%;
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    animation: textAnimate 2s linear infinite;
+                  }
+                }
+              }
+            }
+          }
+          .CoderBox{
+            width: 100%;
+            height: 180px;/*380*/
+            .codeFile{
+              min-width: 100%;
+              max-width: 100%;
+              min-height: 100%;
+              max-height: 180px;
+              resize: none;
+              font-size: 12px;
+              padding: 5px 10px;
+              border-radius: 15px 15px 0 0;
+              background: #2d0270;
+              color: #e6edf3;
+              border: 3px solid #413e3e;
+              outline: none;
+            }
+          }
+          .OutputBox{
+            width: 100%;
+            max-height: 365px;
+            .title{
+              width: 100%;
+              height: 65px;
+              padding: 7px 20px;
+              display: flex;
+              justify-content: space-between;
+              .OutputBoxTitle{
+                height: 50px;
+                border-radius: 20px;
+                padding:  0 10px;
+                border: none;
+                background-image: url('bg.png');
+                background-size: cover;
+                background-position: top;
+                background-repeat: no-repeat;
+                span{
+                font-size: 22px;
+                font-weight: 1000;
+                padding: 20px 0;
+                user-select: none;
+                }
+              }
+              .owner{
+                width: 50px;
+                height: 50px;
+                overflow: hidden;
+                img{
+                  width: 50px;
+                  height: 50px;
+                  border-radius: 50%;
+                }
+                &:hover, &:active{
+                  position: absolute;
+                  top: 0:
+                  left: 0;
+                  width: 350px;
+                  height: 350px;
+                  display: flex;
+                  gap: 5px;
+                  overflow-x: auto;
+                  scroll-behavior: smooth;
+                  border-radius: 25px;
+                  img{
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 25px;
+                  }
+                }
+              }
+            }
+            .previewSrc{
+              width: 100%;
+              min-height: 260px;
+              max-height: 300px;
+              background: #ffffff;
+              border: 3px solid #413e3e;
+              border-radius: 0 0 15px 15px;
+            }
+          }
+          .MyLinkings{
+            width: 100%;
+            height: 60px;
+            margin-top: 10px;
+            padding: 0 50px;
+            cursor:pointer;
+            display: flex;
+            justify-content: space-around;
+            a{
+              width: 60px;
+              height: 60px;
+              cursor:pointer;
+              border-radius: 50%;
+              img{
+               width: 60px;
+               height: 60px;
+               cursor:pointer;
+               border-radius: 50%;
+              }
+            }
+          }
+        }
+      }
+    }
+    @keyframes textAnimate {
+      0% { background-position: 0%; }
+      100% { background-position: 300%; }
+    }
+  }
