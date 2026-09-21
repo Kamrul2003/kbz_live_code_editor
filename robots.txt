@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://kamrul2003.github.io/kbz_live_code_editor/sitemap.xml
